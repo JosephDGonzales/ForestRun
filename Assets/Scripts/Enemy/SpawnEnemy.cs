@@ -12,7 +12,8 @@ public class SpawnEnemy : MonoBehaviour
         if (collision.gameObject.tag == "Player")       //if collision with object that has the Player tag occurs
         {
             StartCoroutine(Spawn());
-        }    
+            Physics2D.IgnoreCollision(collision, GetComponent<Collider2D>());
+        }
     }
 
     IEnumerator Spawn()
