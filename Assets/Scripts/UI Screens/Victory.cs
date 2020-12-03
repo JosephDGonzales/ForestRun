@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Victory : MonoBehaviour
 {
     public GameObject VictoryUI;
     public InGameTimer saveTime;
     public BerryCount saveBerry;
+    public Button pauseButton;
     public bool isVictory;
     public bool isVictory2;
     float win1 = 0f;
@@ -45,6 +47,7 @@ public class Victory : MonoBehaviour
     {
         VictoryUI.SetActive(true);
         Time.timeScale = 0f;
+        pauseButton.interactable = false;
         Scene scene = SceneManager.GetActiveScene();
 
         if (scene.name == "Forestrun" && besttime == 0)
@@ -94,15 +97,24 @@ public class Victory : MonoBehaviour
         }
     }
 
+    public void LoadNextLevel()
+    {
+        Time.timeScale = 1f;
+        pauseButton.interactable = true;
+        SceneManager.LoadScene("Forestrun 2");
+    }   
+    
     public void LoadMenu()
     {
         Time.timeScale = 1f;
+        pauseButton.interactable = true;
         SceneManager.LoadScene(0);
     }
 
     public void QuitGame()
     {
         Debug.Log("QUIT!");
+        pauseButton.interactable = true;
         Application.Quit();
     }
 }
