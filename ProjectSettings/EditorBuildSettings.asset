@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Forestrun.unity
     guid: 54a8f83d4551dcd4ea7f8b179d11083f
+  - enabled: 1
+    path: Assets/Scenes/Forestrun 2.unity
+    guid: 549360d21c361494ea432bf21acdc72e
   m_configObjects: {}

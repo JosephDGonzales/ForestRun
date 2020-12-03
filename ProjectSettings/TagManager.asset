@@ -12,6 +12,7 @@ TagManager:
   - Spawn
   - Jump
   - Obstacle2
+  - Berry
   layers:
   - Default
   - TransparentFX

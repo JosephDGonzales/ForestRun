@@ -38,6 +38,12 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Forestrun");
     }
 
+    public void PlayGame2()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Forestrun 2");
+    }
+
     public void QuitGame() // used for quitsing
     {
         Debug.Log("GAME QUIT!");

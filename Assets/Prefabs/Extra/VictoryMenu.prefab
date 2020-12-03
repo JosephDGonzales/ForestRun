@@ -384,7 +384,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2120936701516098791
 RectTransform:
   m_ObjectHideFlags: 0
@@ -520,6 +520,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VictoryUI: {fileID: 2120936701516098788}
+  saveTime: {fileID: 0}
+  saveBerry: {fileID: 0}
+  isVictory: 0
+  isVictory2: 0
 --- !u!1 &2120936702005455897
 GameObject:
   m_ObjectHideFlags: 0
